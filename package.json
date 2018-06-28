@@ -2,7 +2,7 @@
     "name": "vue-beautify2",
     "displayName": "vue-beautify2",
     "description": "Beautify Vue code in place for vscode",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "keraun",
     "engines": {
         "vscode": "^1.10.0"
