@@ -58,7 +58,7 @@ module.exports = function(text, isTabIndent, indentSize, isRootIndent) {
 
         // is root tag indent
         //if (isRootIndent) {
-        //code = rootTagIndent(code, options);
+        code = rootTagIndent(code, options);
         //}
 
         return tagStart + '\n' + code + '\n' + tagEnd;
