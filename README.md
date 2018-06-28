@@ -1,7 +1,6 @@
 
 > Notice: 原作者不维护了，keruan fork代码优化了一些地方，重新发版vue-beautify2
 1.import 格式化不换行
-2.script 标签 isRootIndent 为true
 
 
 > Notice: This project is no longer maintained. 注意：这个项目已经不在维护了
