@@ -11,6 +11,8 @@ var pugBeautify = require('pug-beautify');
  */
 module.exports = function(text, isTabIndent, indentSize, isRootIndent) {
 
+    indentSize = 4;
+
     if (isTabIndent === undefined) {
         isTabIndent = false;
     }
@@ -55,9 +57,9 @@ module.exports = function(text, isTabIndent, indentSize, isRootIndent) {
         code = beautifyJs(code, options);
 
         // is root tag indent
-        if (isRootIndent) {
-            code = rootTagIndent(code, options);
-        }
+        //if (isRootIndent) {
+        code = rootTagIndent(code, options);
+        //}
 
         return tagStart + '\n' + code + '\n' + tagEnd;
 
@@ -79,9 +81,9 @@ module.exports = function(text, isTabIndent, indentSize, isRootIndent) {
         code = beautifyCss(code, options);
 
         // is root tag indent
-        if (isRootIndent) {
-            code = rootTagIndent(code, options);
-        }
+        // if (isRootIndent) {
+        //     code = rootTagIndent(code, options);
+        // }
 
         return tagStart + '\n' + code + '\n' + tagEnd;
     });
